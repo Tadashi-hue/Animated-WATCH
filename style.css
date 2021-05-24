@@ -1,0 +1,94 @@
+
+#disque{
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	background-image: url('cadre.jfif');
+}
+#seconde{
+	position: absolute; top: 200px; left: 200px;
+	width: 180px;
+	height: 6px;
+	background-color: black;
+	transform-origin: top left;
+}
+
+#minute{
+	position: absolute; top: 200px; left: 200px;
+	width: 160px;/*, 0px,160px,8px;*/
+	height: 8px;
+	background-color: blue;
+	/*transform: rotate(45deg);*/
+	transform-origin: top left;
+
+}
+
+#heure{
+	position: absolute; top: 200px; left: 200px;
+	width: 120px;
+	height: 10px;
+	background-color: red;
+	/*transform: rotate(45deg);*/
+	transform-origin: top left;
+	border-radius: 30%;
+}
+#un{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 20px; left:270px;
+}
+#deux{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 80px; left:340px;
+}
+#trois{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 180px; left:380px;
+}
+#quatre{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top:280px; left:340px;
+}
+#cinq{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 340px; left:270px;
+}
+#six{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 360px; left:200px;
+}
+#sept{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 340px; left:130px;
+}
+#huit{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 280px; left:60px;
+}
+#neuf{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 180px; left:20px;
+}
+#dix{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 80px; left:60px;
+}
+#onze{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 20px; left:130px;
+}
+#douze{
+	font-family: rockwell;
+	font-size: 30px;
+	position: absolute; top: 15px; left:190px;
+}

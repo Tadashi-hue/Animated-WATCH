@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Montre</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url('BG.jpg'); background-size: 70%">
+	<div id="disque"></div>
+	<div id="seconde"></div>
+	<div id="minute"></div>
+	<div id="heure"></div>
+	<div id="un">1</div>
+	<div id="deux">2</div>
+	<div id="trois">3</div>
+	<div id="quatre">4</div>
+	<div id="cinq">5</div>
+	<div id="six">6</div>
+	<div id="sept">7</div>
+	<div id="huit">8</div>
+	<div id="neuf">9</div>
+	<div id="dix">10</div>
+	<div id="onze">11</div>
+	<div id="douze">12</div>
+	
+	<script type="text/javascript">
+		var D=new Date();
+		var nbsec=D.getSeconds();
+		var nbmin=D.getMinutes();
+		var nbh=D.getHours();
+		var seconde=document.getElementById("seconde");
+		var minute=document.getElementById("minute");
+		var heure=document.getElementById("heure");
+		var angle1=270+nbsec*6;
+		var angle2=270+nbmin*6;
+		var angle3=270+nbh*30;
+		seconde.style.transform="rotate("+angle1.toString()+"deg)";
+		minute.style.transform="rotate("+angle2.toString()+"deg)";
+		heure.style.transform="rotate("+angle3.toString()+"deg)";
+		
+		setInterval(()=>{
+			//nbsec=D.getSeconds();
+			angle1=(angle1+6)%360;
+			var position="rotate("+angle1.toString()+"deg)";
+			seconde.style.transform=position;
+			console.log(nbsec);
+		},1000);
+		setInterval(()=>{
+			//nbsec=D.getSeconds();
+			angle2=(angle2+6)%360;
+			var position="rotate("+angle2.toString()+"deg)";
+			minute.style.transform=position;
+			console.log(nbsec);
+		},60000);
+		setInterval(()=>{
+			//nbsec=D.getSeconds();
+			angle3=(angle3+30)%360;
+			var position="rotate("+angle3.toString()+"deg)";
+			minute.style.transform=position;
+			console.log(nbsec);
+		},360000);
+
+
+		
+		
+	</script>
+</body>
+</html>
